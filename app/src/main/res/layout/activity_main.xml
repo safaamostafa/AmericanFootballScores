@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.safsaf.americanfootballscores.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/teamALinearLayOut"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/textTeamA"
+                android:textAllCaps="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp"
+                android:textColor="@color/textTeamColor"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/scoreTeamA"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp"
+                android:textColor="@color/scoreColor"
+                android:id="@+id/team_a_score"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/buttonColor"
+                android:text="@string/touchDownA"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:onClick="addTouchDownA"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/buttonColor"
+                android:text="@string/fieldGoalA"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:onClick="addFieldGoalA"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/buttonColor"
+                android:text="@string/twoPointConversionA"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:onClick="addTwoPointConversionA"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/buttonColor"
+                android:text="@string/safetyA"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+              android:onClick="addSafetyA"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/teamBLinearLayOut">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="team B"
+                android:textAllCaps="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp"
+                android:textColor="@color/textTeamColor"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp"
+                android:id="@+id/team_b_score"
+                android:textColor="@color/scoreColor"
+           />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/buttonColor"
+                android:text="+6 Touchdown"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:onClick="addTouchDownB"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/buttonColor"
+                android:text="+3 Field Goal"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:onClick="addFieldGoalB"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/buttonColor"
+                android:text="+2 Two Point Conversion"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:onClick="addTwoPointConversionB"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/buttonColor"
+                android:text="+2 Safety"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:onClick="addSafetyB"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/buttonColor"
+        android:text="@string/reset"
+        android:textSize="20sp"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:onClick="buttonResetAB"/>
+
+</RelativeLayout>

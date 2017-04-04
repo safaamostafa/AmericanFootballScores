@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">"American Football Scores "</string>
+    <string name="textTeamA">team A</string>
+    <string name="scoreTeamA">0</string>
+    <string name="touchDownA">+6 Touchdown</string>
+    <string name="fieldGoalA">+3 Field Goal</string>
+    <string name="twoPointConversionA">+2 Two Point Conversion</string>
+    <string name="safetyA">+2 Safety</string>
+    <string name="textTeamB">team A</string>
+    <string name="scoreTeamB">0</string>
+    <string name="touchDownB">+6 Touchdown</string>
+    <string name="fieldGoalB">+3 Field Goal</string>
+    <string name="twoPointConversionB">+2 Two Point Conversion</string>
+    <string name="safetyB">+2 Safety</string>
+    <string name="reset">reset</string>
+</resources>
